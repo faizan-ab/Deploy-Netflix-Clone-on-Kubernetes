@@ -9,6 +9,7 @@ COPY . .
 
 ARG TMDB_V3_API_KEY
 ENV VITE_APP_TMDB_V3_API_KEY=${TMDB_V3_API_KEY}
+RUN echo "VITE_APP_TMDB_V3_API_KEY=$TMDB_V3_API_KEY" > .env
 RUN npm run build || true
 
 FROM nginx:stable-alpine
