@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: netflix-ingress
+spec:
+  rules:
+  - host: netflix.a2b91c737184f7497db2f76da3f5b8d21-1046122224.ap-south-1.elb.amazonaws.com.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: netflix-service
+            port:
+              number: 80
