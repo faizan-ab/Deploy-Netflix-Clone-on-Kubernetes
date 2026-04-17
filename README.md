@@ -152,16 +152,22 @@ It covers:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/faizan-ab/Deploy-Netflix-Clone-on-Kubernetes.git
-cd Deploy-Netflix-Clone-on-Kubernetes
-
-2. Build Docker Image
-docker build -t netflix .
-3. Run Container
-docker run -d -p 8081:80 netflix
-4. Access Application
-http://<your-ec2-ip>:8081
+$git clone https://github.com/faizan-ab/Deploy-Netflix-Clone-on-Kubernetes.git
+$cd Deploy-Netflix-Clone-on-Kubernetes
 ```
+```
+### 2. Build Docker Image
+$docker build -t netflix .
+```
+```
+### 3. Run Container
+$docker run -d -p 8081:80 netflix
+```
+```
+###4. Access Application
+$http://<your-ec2-ip>:8081
+```
+---
 
 ## 🧠 Challenges & Fixes
 
@@ -205,6 +211,6 @@ Alerting system (Grafana alerts)
 
 ## 👨‍💻 Author
 
-Faizan
-⭐ Show Your Support
+Mohammed Abdul Faizan
+⭐ Show Your Supporth
 If you like this project, give it a ⭐ on GitHub!
