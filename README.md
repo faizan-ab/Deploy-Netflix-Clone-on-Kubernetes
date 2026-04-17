@@ -15,6 +15,11 @@ It covers:
 
 ## 🏗️ Architecture
 
+### Architecture Diagram
+![Architecture](Screenshots/architecture.png)
+
+---
+
 🧩 Architecture Flow
 
 ```
@@ -171,16 +176,16 @@ http://<your-ec2-ip>:8081
 ## 📷 Screenshots
 
 ### Jenkins Pipeline
-![Jenkins](screenshots/jenkins.png)
+![Jenkins](Screenshots/jenkins.png)
 
 ### Application
-![App](screenshots/app.png)
+![App](Screenshots/app.png)
 
 ### Grafana Dashboard
-![Grafana](screenshots/grafana.png)
+![Grafana](Screenshots/grafana.png)
 
 ### SonarQube
-![Sonar](screenshots/sonarqube.png)
+![Sonar](Screenshots/sonarqube.png)
 
 ## 🎯 Key Learnings
 
