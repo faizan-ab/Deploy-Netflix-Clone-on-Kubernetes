@@ -24,24 +24,24 @@ It covers:
 
 ```
                 ┌──────────────┐
-                │   Developer  │
+                │   Developer     │
                 └──────┬───────┘
-                       │
-                       ▼
+                        │
+▼
                 ┌──────────────┐
-                │   GitHub     │
+                │   GitHub        │
                 └──────┬───────┘
                        │ (Webhook)
                        ▼
                 ┌──────────────┐
-                │   Jenkins    │
+                │   Jenkins       │
                 └──────┬───────┘
                        │
         ┌──────────────┼──────────────┐
         ▼                             ▼
 ┌──────────────┐              ┌──────────────┐
-│ SonarQube    │              │   Trivy      │
-│ Code Scan    │              │ Security     │
+│ SonarQube       │              │   Trivy         │
+│ Code Scan       │              │ Security        │
 └──────────────┘              └──────────────┘
                        │
                        ▼
@@ -58,21 +58,21 @@ It covers:
                        ▼
                 ┌──────────────┐
                 │   AWS EC2    │
-                │  (Nginx)     │
+                │  (Nginx)        │
                 └──────┬───────┘
                        │
                        ▼
                 ┌──────────────┐
-                │   Users      │
+                │   Users         │
                 └──────────────┘
 
         Monitoring Stack:
         ┌──────────────┐
-        │ Prometheus   │
+        │ Prometheus      │
         └──────┬───────┘
                ▼
         ┌──────────────┐
-        │  Grafana     │
+        │  Grafana        │
         └──────────────┘
 ```
 
@@ -132,7 +132,7 @@ It covers:
 ### 🔹 Grafana
 - Visualizes metrics via dashboards
 
-### 📈 Metrics Monitored
+### 🔹 📈 Metrics Monitored
 - CPU usage
 - Memory usage
 - Disk utilization
@@ -151,20 +151,23 @@ It covers:
 ## 🚀 How to Run
 
 ### 1. Clone Repository
-```bash
+```
 $git clone https://github.com/faizan-ab/Deploy-Netflix-Clone-on-Kubernetes.git
 $cd Deploy-Netflix-Clone-on-Kubernetes
 ```
-```
+
 ### 2. Build Docker Image
+```
 $docker build -t netflix .
 ```
-```
+
 ### 3. Run Container
+```
 $docker run -d -p 8081:80 netflix
 ```
-```
+
 ###4. Access Application
+```
 $http://<your-ec2-ip>:8081
 ```
 ---
@@ -195,22 +198,23 @@ $http://<your-ec2-ip>:8081
 
 ## 🎯 Key Learnings
 
-Building real-world CI/CD pipelines
-Debugging DevOps issues
-Container security practices
-Monitoring production systems
-Handling environment configurations
+- Building real-world CI/CD pipelines
+- Debugging DevOps issues
+- Container security practices
+- Monitoring production systems
+- Handling environment configurations
 
 ## 🚀 Future Enhancements
 
-Kubernetes Deployment (EKS)
-Helm Charts
-CI/CD optimization
-Alerting system (Grafana alerts)
+- Kubernetes Deployment (EKS)
+- Helm Charts
+- CI/CD optimization
+- Alerting system (Grafana alerts)
 
 
 ## 👨‍💻 Author
 
-Mohammed Abdul Faizan
-⭐ Show Your Supporth
-If you like this project, give it a ⭐ on GitHub!
+- Mohammed Abdul Faizan
+- DevOps Enthusiast
+- ⭐ Show Your Supporth
+- If you like this project, give it a ⭐ on GitHub!
